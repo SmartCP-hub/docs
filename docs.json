@@ -14,7 +14,32 @@
         "product": "SmartCP Logistics",
         "tabs": [
           {
+            "tab": "API reference",
+            "icon": "square-terminal",
+            "groups": [
+              {
+                "group": "Getting Started",
+                "icon": "rocket",
+                "pages": [
+                  "overview",
+                  "authentication",
+                  "responses-rate-limits"
+                ]
+              },
+              {
+                "group": "Endpoint examples",
+                "pages": [
+                  "api-reference/endpoint/get",
+                  "api-reference/endpoint/create",
+                  "api-reference/endpoint/delete",
+                  "api-reference/endpoint/webhook"
+                ]
+              }
+            ]
+          },
+          {
             "tab": "Guides",
+            "hidden": true,
             "groups": [
               {
                 "group": "Getting started",
@@ -50,31 +75,6 @@
                   "ai-tools/cursor",
                   "ai-tools/claude-code",
                   "ai-tools/windsurf"
-                ]
-              }
-            ],
-            "hidden": true
-          },
-          {
-            "tab": "API reference",
-            "icon": "square-terminal",
-            "groups": [
-              {
-                "group": "Getting Started",
-                "icon": "rocket",
-                "pages": [
-                  "overview",
-                  "authentication",
-                  "responses-rate-limits"
-                ]
-              },
-              {
-                "group": "Endpoint examples",
-                "pages": [
-                  "api-reference/endpoint/get",
-                  "api-reference/endpoint/create",
-                  "api-reference/endpoint/delete",
-                  "api-reference/endpoint/webhook"
                 ]
               }
             ]
