@@ -22,8 +22,7 @@
                 "icon": "rocket",
                 "pages": [
                   "overview",
-                  "authentication",
-                  "responses-rate-limits"
+                  "authentication"
                 ]
               },
               {
