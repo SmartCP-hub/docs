@@ -1,0 +1,13 @@
+---
+title: "HTTP API Authentication"
+sidebarTitle: "Authentication"
+---
+
+### **Required Headers**
+
+Every authenticated request requires these headers:
+
+| HEADER | VALUE | DESCRIPTION |
+| --- | --- | --- |
+| <Badge color="purple">Authorization</Badge> | Bearer `client_secret_key` | Provide the client secret key as a Bearer token.<br />Format: `Authorization: Bearer {client_secret_key}` |
+| <Badge color="purple" iconType="solid">directory</Badge> | `client_directory` | `client_directory` is the client-specific directory segment in the application URL.<br />Example:<br />`logistics.smartcp.org/{client_directory}`<br />If the client directory is `acme`, the app URL would be:<br />`logistics.smartcp.org/acme` |

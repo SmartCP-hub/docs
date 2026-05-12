@@ -1,0 +1,130 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "SmartCP Docs",
+  "colors": {
+    "primary": "#6f42c1",
+    "light": "#6f42c1",
+    "dark": "#6f42c1"
+  },
+  "favicon": "/images/icon.png",
+  "navigation": {
+    "products": [
+      {
+        "product": "SmartCP Logistics",
+        "tabs": [
+          {
+            "tab": "Guides",
+            "groups": [
+              {
+                "group": "Getting started",
+                "pages": [
+                  "index",
+                  "quickstart",
+                  "development"
+                ]
+              },
+              {
+                "group": "Customization",
+                "pages": [
+                  "essentials/settings",
+                  "essentials/navigation"
+                ]
+              },
+              {
+                "group": "Writing content",
+                "pages": [
+                  "essentials/markdown",
+                  "essentials/code",
+                  "essentials/images",
+                  "essentials/components",
+                  "essentials/reusable-snippets"
+                ]
+              },
+              {
+                "group": "Agent ready",
+                "pages": [
+                  "agent-ready/prompt",
+                  "agent-ready/visibility",
+                  "agent-ready/contextual",
+                  "ai-tools/cursor",
+                  "ai-tools/claude-code",
+                  "ai-tools/windsurf"
+                ]
+              }
+            ],
+            "hidden": true
+          },
+          {
+            "tab": "API reference",
+            "icon": "square-terminal",
+            "groups": [
+              {
+                "group": "Getting Started",
+                "icon": "rocket",
+                "pages": [
+                  "overview",
+                  "authentication",
+                  "responses-rate-limits"
+                ]
+              },
+              {
+                "group": "Endpoint examples",
+                "pages": [
+                  "api-reference/endpoint/get",
+                  "api-reference/endpoint/create",
+                  "api-reference/endpoint/delete",
+                  "api-reference/endpoint/webhook"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "logo": "/images/icon.png",
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:support@smartcp.org"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://dashboard.mintlify.com"
+    }
+  },
+  "contextual": {
+    "options": [
+     "copy",
+     "view",
+     "chatgpt",
+     "claude",
+     "perplexity",
+     "mcp",
+     "cursor",
+     "vscode"
+   ]
+  },
+  "footer": {
+    "socials": {
+      "linkedin": "https://www.linkedin.com/company/smartcp-org",
+      "youtube": "https://www.youtube.com/@smartcp-org",
+      "facebook": "https://www.facebook.com/www.smartcp.org",
+      "instagram": "https://www.instagram.com/smartcp_org",
+      "website": "https://www.smartcp.org/"
+    }
+  },
+  "api": {
+    "playground": {
+      "display": "none"
+    }
+  },
+  "banner": {
+    "content": "\\",
+    "dismissible": false
+  }
+}
