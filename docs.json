@@ -122,9 +122,5 @@
     "playground": {
       "display": "none"
     }
-  },
-  "banner": {
-    "content": "\\",
-    "dismissible": false
   }
 }
