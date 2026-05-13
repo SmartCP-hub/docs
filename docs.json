@@ -48,6 +48,9 @@
                   }
                 ],
                 "icon": "code"
+              },
+              {
+                "dropdown": "Carrier REST API v1"
               }
             ]
           },
