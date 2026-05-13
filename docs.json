@@ -67,9 +67,10 @@
         ]
       },
       {
-        "tab": "Changelog",
+        "tab": "Changelogs",
+        "icon": "clock-rotate-left",
         "pages": [
-          "changelog"
+          "changelogs/scp-logistics"
         ]
       }
     ]
