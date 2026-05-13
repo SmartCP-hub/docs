@@ -9,77 +9,76 @@
   },
   "favicon": "/images/icon.png",
   "navigation": {
-    "products": [
+    "tabs": [
       {
-        "product": "SmartCP Logistics",
-        "tabs": [
+        "tab": "API reference",
+        "icon": "square-terminal",
+        "dropdowns": [
           {
-            "tab": "API reference",
-            "icon": "square-terminal",
+            "dropdown": "SmartCP Logistics",
             "groups": [
               {
                 "group": "Getting Started",
-                "icon": "rocket",
                 "pages": [
                   "overview",
                   "authentication"
                 ]
               },
               {
-                "group": "Endpoint examples",
+                "group": "REST API",
                 "pages": [
-                  "api-reference/endpoint/get",
-                  "api-reference/endpoint/create",
-                  "api-reference/endpoint/delete",
-                  "api-reference/endpoint/webhook"
+                  "",
+                  ""
                 ]
-              },
-              {
-                "group": "Orders",
-                "openapi": "https://logistics.api-test.smartcp.org/openapi/orders.openapi.json"
               }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "pages": [
+          "changelog"
+        ]
+      },
+      {
+        "tab": "Guides",
+        "hidden": true,
+        "groups": [
+          {
+            "group": "Getting started",
+            "pages": [
+              "index",
+              "quickstart",
+              "development"
             ]
           },
           {
-            "tab": "Guides",
-            "hidden": true,
-            "groups": [
-              {
-                "group": "Getting started",
-                "pages": [
-                  "index",
-                  "quickstart",
-                  "development"
-                ]
-              },
-              {
-                "group": "Customization",
-                "pages": [
-                  "essentials/settings",
-                  "essentials/navigation"
-                ]
-              },
-              {
-                "group": "Writing content",
-                "pages": [
-                  "essentials/markdown",
-                  "essentials/code",
-                  "essentials/images",
-                  "essentials/components",
-                  "essentials/reusable-snippets"
-                ]
-              },
-              {
-                "group": "Agent ready",
-                "pages": [
-                  "agent-ready/prompt",
-                  "agent-ready/visibility",
-                  "agent-ready/contextual",
-                  "ai-tools/cursor",
-                  "ai-tools/claude-code",
-                  "ai-tools/windsurf"
-                ]
-              }
+            "group": "Customization",
+            "pages": [
+              "essentials/settings",
+              "essentials/navigation"
+            ]
+          },
+          {
+            "group": "Writing content",
+            "pages": [
+              "essentials/markdown",
+              "essentials/code",
+              "essentials/images",
+              "essentials/components",
+              "essentials/reusable-snippets"
+            ]
+          },
+          {
+            "group": "Agent ready",
+            "pages": [
+              "agent-ready/prompt",
+              "agent-ready/visibility",
+              "agent-ready/contextual",
+              "ai-tools/cursor",
+              "ai-tools/claude-code",
+              "ai-tools/windsurf"
             ]
           }
         ]
