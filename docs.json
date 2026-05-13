@@ -81,7 +81,7 @@
                     "pages": [
                       {
                         "group": "Orders",
-                        "openapi": "https://logistics.api-test.smartcp.org/openapi/orders.openapi.json"
+                        "pages": []
                       }
                     ]
                   }
