@@ -61,7 +61,7 @@
                   {
                     "group": "Getting Started",
                     "pages": [
-                      "scp-logistics/api-reference/carrier-rest-api/v1/overview"
+                      "api-reference/scp-logistics/carrier-rest-api/v1/overview"
                     ]
                   }
                 ]
