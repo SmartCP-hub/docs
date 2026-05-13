@@ -9,54 +9,40 @@
   },
   "favicon": "/images/icon.png",
   "navigation": {
-    "products": [
+    "tabs": [
       {
-        "product": "SmartCP Logistics",
-        "tabs": [
+        "tab": "Docs",
+        "icon": "book-open",
+        "hidden": true,
+        "pages": [
+          "index"
+        ]
+      },
+      {
+        "tab": "API reference",
+        "icon": "square-terminal",
+        "dropdowns": [
           {
-            "tab": "API reference",
-            "icon": "square-terminal",
-            "dropdowns": [
+            "dropdown": "Client REST API",
+            "versions": [
               {
-                "dropdown": "Client REST API",
-                "versions": [
+                "version": "v1",
+                "groups": [
                   {
-                    "version": "v1",
-                    "groups": [
-                      {
-                        "group": "Getting Started",
-                        "pages": [
-                          "scp-logistics/api-reference/client-rest-api/v1/overview",
-                          "scp-logistics/api-reference/client-rest-api/v1/untitled-page"
-                        ]
-                      },
-                      {
-                        "group": "REST API",
-                        "pages": [
-                          {
-                            "group": "Orders",
-                            "expanded": true,
-                            "pages": [
-                              "scp-logistics/api-reference/client-rest-api/v1/orders/find-by-number"
-                            ]
-                          }
-                        ]
-                      }
+                    "group": "Getting Started",
+                    "pages": [
+                      "scp-logistics/api-reference/client-rest-api/v1/overview",
+                      "scp-logistics/api-reference/client-rest-api/v1/untitled-page"
                     ]
-                  }
-                ]
-              },
-              {
-                "dropdown": "Carrier REST API",
-                "hidden": true,
-                "versions": [
+                  },
                   {
-                    "version": "v1",
-                    "groups": [
+                    "group": "REST API",
+                    "pages": [
                       {
-                        "group": "Getting Started",
+                        "group": "Orders",
+                        "expanded": true,
                         "pages": [
-                          "scp-logistics/api-reference/carrier-rest-api/v1/overview"
+                          "scp-logistics/api-reference/client-rest-api/v1/orders/find-by-number"
                         ]
                       }
                     ]
@@ -66,53 +52,28 @@
             ]
           },
           {
-            "tab": "Changelog",
-            "pages": [
-              "changelog"
-            ]
-          },
-          {
-            "tab": "Guides",
+            "dropdown": "Carrier REST API",
             "hidden": true,
-            "groups": [
+            "versions": [
               {
-                "group": "Getting started",
-                "pages": [
-                  "index",
-                  "quickstart",
-                  "development"
-                ]
-              },
-              {
-                "group": "Customization",
-                "pages": [
-                  "essentials/settings",
-                  "essentials/navigation"
-                ]
-              },
-              {
-                "group": "Writing content",
-                "pages": [
-                  "essentials/markdown",
-                  "essentials/code",
-                  "essentials/images",
-                  "essentials/components",
-                  "essentials/reusable-snippets"
-                ]
-              },
-              {
-                "group": "Agent ready",
-                "pages": [
-                  "agent-ready/prompt",
-                  "agent-ready/visibility",
-                  "agent-ready/contextual",
-                  "ai-tools/cursor",
-                  "ai-tools/claude-code",
-                  "ai-tools/windsurf"
+                "version": "v1",
+                "groups": [
+                  {
+                    "group": "Getting Started",
+                    "pages": [
+                      "scp-logistics/api-reference/carrier-rest-api/v1/overview"
+                    ]
+                  }
                 ]
               }
             ]
           }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "pages": [
+          "changelog"
         ]
       }
     ]
