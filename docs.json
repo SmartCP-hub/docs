@@ -13,7 +13,14 @@
       "https://logistics.api-test.smartcp.org/openapi/orders.openapi.json"
     ],
     "playground": {
-      "display": "none"
+      "display": "interactive",
+      "proxy": true
+    },
+    "examples": {
+      "languages": ["curl", "javascript", "python", "php"],
+      "defaults": "required",
+      "prefill": true,
+      "autogenerate": true
     }
   },
   "navbar": {
