@@ -22,10 +22,10 @@
         "icon": "square-terminal",
         "products": [
           {
-            "product": "Client REST API",
+            "product": "SmartCP Logistics",
             "dropdowns": [
               {
-                "dropdown": "v1",
+                "dropdown": "Client REST API v1",
                 "groups": [
                   {
                     "group": "Getting Started",
