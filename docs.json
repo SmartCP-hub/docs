@@ -81,7 +81,9 @@
                     "pages": [
                       {
                         "group": "Orders",
-                        "pages": []
+                        "pages": [
+                          "api-reference/scp-logistics/client-rest-api-v1/orders/find-by-number"
+                        ]
                       }
                     ]
                   }
