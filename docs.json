@@ -10,7 +10,8 @@
   "favicon": "/images/icon.png",
   "api": {
     "openapi": [
-      "https://logistics.api-test.smartcp.org/openapi/orders.openapi.json"
+      "https://logistics.api.smartcp.org/openapi/orders.openapi.json",
+      "https://logistics.api.smartcp.org/openapi/invoices.openapi.json"
     ],
     "playground": {
       "display": "interactive",
