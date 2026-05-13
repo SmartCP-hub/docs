@@ -83,7 +83,7 @@
                         "group": "Orders",
                         "openapi": "https://logistics.api-test.smartcp.org/openapi/orders.openapi.json",
                         "pages": [
-                          "api-reference/scp-logistics/client-rest-api-v1/orders/find-by-number"
+                          "GET /orders/by-nr"
                         ]
                       }
                     ]
