@@ -23,15 +23,15 @@
         "products": [
           {
             "product": "Client REST API",
-            "versions": [
+            "dropdowns": [
               {
-                "version": "v1",
+                "dropdown": "v1",
                 "groups": [
                   {
                     "group": "Getting Started",
                     "pages": [
                       "api-reference/scp-logistics/client-rest-api/v1/overview",
-                      "api-reference/scp-logistics/client-rest-api/v1/authentication"
+                      "api-reference/scp-logistics/client-rest-api/v1/untitled-page"
                     ]
                   },
                   {
@@ -53,9 +53,9 @@
           {
             "product": "Carrier REST API",
             "hidden": true,
-            "versions": [
+            "dropdowns": [
               {
-                "version": "v1",
+                "dropdown": "v1",
                 "groups": [
                   {
                     "group": "Getting Started",
