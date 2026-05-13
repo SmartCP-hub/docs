@@ -41,7 +41,7 @@
                         "group": "Orders",
                         "pages": [
                           "api-reference/scp-logistics/client-rest-api-v1/orders/find-by-number",
-                          "api-reference/scp-logistics/client-rest-api-v1/orders/untitled-page"
+                          "api-reference/scp-logistics/client-rest-api-v1/orders/file-categories"
                         ],
                         "openapi": "https://logistics.api-test.smartcp.org/openapi/orders.openapi.json"
                       }
