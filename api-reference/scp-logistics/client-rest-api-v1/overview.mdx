@@ -118,11 +118,42 @@ Field reference:
 
 ## HTTP Status Codes
 
-- <Badge color="green">200 OK</Badge> for successful reads.
-- <Badge color="green">201 Created</Badge> when at least one file was attached successfully.
-- <Badge color="red">401 Unauthorized</Badge> when authentication fails.
-- <Badge color="red">404 Not Found</Badge> when a route or requested order does not exist.
-- <Badge color="red">405 Method Not Allowed</Badge> when the route exists but the HTTP method is wrong.
-- <Badge color="red">422 Unprocessable Entity</Badge> for validation failures and for upload requests where no file could be attached.
-- <Badge color="red">429 Too Many Requests</Badge> when the shared API limiter is exceeded.
-- <Badge>500 Internal Server Error</Badge> for unexpected server-side failures.
+export const httpStatusCodes = [
+  {
+    status: 200,
+    meaning: "Success",
+  },
+  {
+    status: 400,
+    meaning: "Bad request — invalid parameters",
+  },
+  {
+    status: 401,
+    meaning: "Unauthorized — missing or invalid authentication",
+  },
+  {
+    status: 403,
+    meaning: "Forbidden — insufficient permissions",
+  },
+  {
+    status: 404,
+    meaning: "Not found — endpoint does not exist",
+  },
+  {
+    status: 429,
+    meaning: "Too Many Requests — rate limit exceeded",
+  },
+  {
+    status: 500,
+    meaning: "Internal server error — retry with backoff",
+  },
+];
+
+<ConceptTable
+  columns={[
+  { key: "status", header: "Status", width: "auto" },
+  { key: "meaning", header: "Meaning", width: "1fr" },
+]}
+  rows={httpStatusCodes}
+  codeColumns={["status"]}
+/>
