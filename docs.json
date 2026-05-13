@@ -14,8 +14,7 @@
         "tab": "Docs",
         "icon": "book-open",
         "pages": [
-          "index",
-          "changelogs/scp-logistics"
+          "index"
         ]
       },
       {
@@ -73,7 +72,9 @@
         "groups": [
           {
             "group": "SmartCP Logistics",
-            "pages": []
+            "pages": [
+              "changelogs/scp-logistics"
+            ]
           }
         ]
       }
