@@ -39,12 +39,12 @@
                     "pages": [
                       {
                         "group": "Orders",
-                        "pages": [
-                          "api-reference/scp-logistics/client-rest-api-v1/orders/find-by-number",
-                          "api-reference/scp-logistics/client-rest-api-v1/orders/file-categories",
-                          "api-reference/scp-logistics/client-rest-api-v1/orders/upload-files"
-                        ],
                         "openapi": "https://logistics.api-test.smartcp.org/openapi/orders.openapi.json"
+                        "pages": [
+                          "GET /orders/by-nr",
+                          "GET /orders/file-categories",
+                          "POST /orders/{order_id}/files"
+                        ]
                       }
                     ]
                   }
