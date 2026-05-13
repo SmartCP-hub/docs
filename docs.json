@@ -81,12 +81,7 @@
                     "pages": [
                       {
                         "group": "Orders",
-                        "openapi": "https://logistics.api-test.smartcp.org/openapi/orders.openapi.json",
-                        "pages": [
-                          "GET /orders/by-nr",
-                          "GET /orders/file-categories",
-                          "GET /orders/attach-files"
-                        ]
+                        "openapi": "https://logistics.api-test.smartcp.org/openapi/orders.openapi.json"
                       }
                     ]
                   }
