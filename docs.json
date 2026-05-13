@@ -14,7 +14,8 @@
         "tab": "Docs",
         "icon": "book-open",
         "pages": [
-          "index"
+          "index",
+          "changelogs/scp-logistics"
         ]
       },
       {
@@ -68,10 +69,7 @@
       },
       {
         "tab": "Changelogs",
-        "icon": "clock-rotate-left",
-        "pages": [
-          "changelogs/scp-logistics"
-        ]
+        "icon": "clock-rotate-left"
       }
     ]
   },
