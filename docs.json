@@ -73,7 +73,7 @@
           {
             "group": "SmartCP Logistics",
             "pages": [
-              "changelogs/scp-logistics"
+              "changelog/scp-logistics/client-rest-api-v1"
             ]
           }
         ]
