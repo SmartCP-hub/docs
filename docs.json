@@ -50,16 +50,7 @@
                 "icon": "code"
               },
               {
-                "dropdown": "Carrier REST API v1"
-              }
-            ]
-          },
-          {
-            "product": "Carrier REST API",
-            "hidden": true,
-            "dropdowns": [
-              {
-                "dropdown": "v1",
+                "dropdown": "Carrier REST API v1",
                 "groups": [
                   {
                     "group": "Getting Started",
@@ -68,6 +59,15 @@
                     ]
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "product": "Carrier REST API",
+            "hidden": true,
+            "dropdowns": [
+              {
+                "dropdown": "v1"
               }
             ]
           }
