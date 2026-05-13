@@ -45,6 +45,23 @@
                     ]
                   }
                 ]
+              },
+              {
+                "dropdown": "Carrier REST API",
+                "hidden": true,
+                "versions": [
+                  {
+                    "version": "v1",
+                    "groups": [
+                      {
+                        "group": "Getting Started",
+                        "pages": [
+                          "scp-logistics/api-reference/carrier-rest-api/v1/overview"
+                        ]
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -97,9 +114,6 @@
             ]
           }
         ]
-      },
-      {
-        "product": "SmartCP Human Resources"
       }
     ]
   },

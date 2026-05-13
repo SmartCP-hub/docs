@@ -1,0 +1,128 @@
+---
+title: "API Reference"
+description: "Public client REST API for SmartCP Logistics."
+sidebarTitle: "Overview"
+---
+
+## Base URL
+
+All REST API endpoints are available at:
+
+```text
+https://logistics.api.smartcp.org/v1/{endpoint}
+```
+
+---
+
+## Rate Limits
+
+| Scope | Limit | Period |
+| --- | --- | --- |
+| <Badge color="purple">/v1/*</Badge> | 100 requests | 60 sec |
+|  |  |  |
+
+### How requests are counted
+
+Requests are effectively limited per source IP address.
+
+This means:
+
+- Multiple API keys sent from the same public IP still share the same rate-limit bucket.
+- A single integration sending traffic through one outbound IP can hit the limit across all `v1` endpoints combined.
+- The limit is not currently partitioned by bearer token or `directory` header.
+
+### Success-response headers
+
+For requests that are accepted, we add standard rate-limit headers to the response:
+
+```http
+X-RateLimit-Limit: 100
+X-RateLimit-Remaining: 99
+```
+
+The exact remaining value depends on how many requests have already been made in the current window.
+
+### `429 Too Many Requests`
+
+When the limit is exceeded, the API returns HTTP `429`:
+
+```json
+{
+  "status": 429,
+  "error": "Too Many Attempts."
+}
+```
+
+### Rate-limit headers
+
+Successful responses may include standard rate-limit headers such as:
+
+- `Retry-After`
+- `X-RateLimit-Limit`
+- `X-RateLimit-Remaining`
+- `X-RateLimit-Reset`
+
+Clients should not rely on these headers always being present on `429` responses.
+
+---
+
+## Response Schema
+
+All API responses use a consistent top-level JSON envelope:
+
+```json
+{
+  "status": 200,
+  "data": {}
+}
+```
+
+For error responses, the envelope switches from `data` to `error`:
+
+```json
+{
+  "status": 422,
+  "error": "The nr field is required."
+}
+```
+
+### Successful responses
+
+```json
+{
+  "status": 200,
+  "data": "<endpoint-specific payload>"
+}
+```
+
+Field reference:
+
+- `status` is the HTTP status code.
+- `data` contains the endpoint payload. It can be a number, string, object, array, or `null`.
+
+### Error responses
+
+```json
+{
+  "status": 401,
+  "error": "Authentication failed"
+}
+```
+
+Field reference:
+
+- `status` is the HTTP status code.
+- `error` contains the error payload. In most cases it is a string.
+
+---
+
+## HTTP Status Codes
+
+- <Badge color="green">200 OK</Badge> for successful reads.
+- <Badge color="green">201 Created</Badge> when at least one file was attached successfully.
+- <Badge color="red">401 Unauthorized</Badge> when authentication fails.
+- <Badge color="red">404 Not Found</Badge> when a route or requested order does not exist.
+- <Badge color="red">405 Method Not Allowed</Badge> when the route exists but the HTTP method is wrong.
+- <Badge color="red">422 Unprocessable Entity</Badge> for validation failures and for upload requests where no file could be attached.
+- <Badge color="red">429 Too Many Requests</Badge> when the shared API limiter is exceeded.
+- <Badge>500 Internal Server Error</Badge> for unexpected server-side failures.
