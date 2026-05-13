@@ -9,26 +9,89 @@
   },
   "favicon": "/images/icon.png",
   "navigation": {
-    "tabs": [
+    "products": [
       {
-        "tab": "API reference",
-        "icon": "square-terminal",
-        "dropdowns": [
+        "product": "SmartCP Logistics",
+        "tabs": [
           {
-            "dropdown": "SmartCP Logistics",
+            "tab": "API reference",
+            "icon": "square-terminal",
+            "dropdowns": [
+              {
+                "dropdown": "Client REST API",
+                "versions": [
+                  {
+                    "version": "v1",
+                    "groups": [
+                      {
+                        "group": "Getting Started",
+                        "pages": [
+                          "scp-logistics/api-reference/client-rest-api/v1/overview",
+                          "scp-logistics/api-reference/client-rest-api/v1/untitled-page"
+                        ]
+                      },
+                      {
+                        "group": "REST API",
+                        "pages": [
+                          {
+                            "group": "Orders",
+                            "expanded": true,
+                            "pages": [
+                              "scp-logistics/api-reference/client-rest-api/v1/orders/find-by-number"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Changelog",
+            "pages": [
+              "changelog"
+            ]
+          },
+          {
+            "tab": "Guides",
+            "hidden": true,
             "groups": [
               {
-                "group": "Getting Started",
+                "group": "Getting started",
                 "pages": [
-                  "overview",
-                  "authentication"
+                  "index",
+                  "quickstart",
+                  "development"
                 ]
               },
               {
-                "group": "REST API",
+                "group": "Customization",
                 "pages": [
-                  "",
-                  ""
+                  "essentials/settings",
+                  "essentials/navigation"
+                ]
+              },
+              {
+                "group": "Writing content",
+                "pages": [
+                  "essentials/markdown",
+                  "essentials/code",
+                  "essentials/images",
+                  "essentials/components",
+                  "essentials/reusable-snippets"
+                ]
+              },
+              {
+                "group": "Agent ready",
+                "pages": [
+                  "agent-ready/prompt",
+                  "agent-ready/visibility",
+                  "agent-ready/contextual",
+                  "ai-tools/cursor",
+                  "ai-tools/claude-code",
+                  "ai-tools/windsurf"
                 ]
               }
             ]
@@ -36,52 +99,7 @@
         ]
       },
       {
-        "tab": "Changelog",
-        "pages": [
-          "changelog"
-        ]
-      },
-      {
-        "tab": "Guides",
-        "hidden": true,
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/components",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "Agent ready",
-            "pages": [
-              "agent-ready/prompt",
-              "agent-ready/visibility",
-              "agent-ready/contextual",
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
+        "product": "SmartCP Human Resources"
       }
     ]
   },
