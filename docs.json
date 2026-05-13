@@ -69,12 +69,7 @@
       },
       {
         "tab": "Changelogs",
-        "icon": "clock-rotate-left",
-        "products": [
-          {
-            "product": "SmartCP Logistics"
-          }
-        ]
+        "icon": "clock-rotate-left"
       }
     ]
   },
