@@ -9,6 +9,9 @@
   "logo": "/images/icon.png",
   "favicon": "/images/icon.png",
   "api": {
+    "openapi": [
+      "https://logistics.api-test.smartcp.org/openapi/orders.openapi.json"
+    ],
     "playground": {
       "display": "none"
     }
