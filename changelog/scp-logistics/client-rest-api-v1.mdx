@@ -5,14 +5,21 @@ sidebarTitle: "Client REST API v1"
 mode: "default"
 ---
 
-<Update label="Apr 11, 2026" tags={["Orders","Invoices"]}>
-  <Badge color="blue">New</Badge>  <Badge>Orders</Badge>
+<Update label="Apr 11, 2026" tags='["Orders"]'>
+  <Columns cols={2}>
+    <Column>
+      <Badge color="blue">New</Badge>
+    </Column>
+    <Column>
+      <Badge>Orders</Badge>
+    </Column>
+  </Columns>
 
   New File Categories endpoint.
 
   ---
 
-  <Badge color="green">Enhanced</Badge>  <Badge>Orders</Badge>
+  <Badge color="green">Enhanced</Badge> <Badge>Orders</Badge>
 
   Due to new File Categories feature, we've added a new `file_category` param to the Attach Files data structure.
 </Update>
