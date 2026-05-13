@@ -1,5 +1,4 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "SmartCP Docs",
   "colors": {
@@ -7,7 +6,48 @@
     "light": "#6f42c1",
     "dark": "#6f42c1"
   },
+  "logo": "/images/icon.png",
   "favicon": "/images/icon.png",
+  "api": {
+    "playground": {
+      "display": "none"
+    }
+  },
+  "navbar": {
+    "links": [
+      {
+        "href": "mailto:support@smartcp.org",
+        "label": "Support"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Home",
+      "href": "https://smartcp.org"
+    }
+  },
+  "footer": {
+    "socials": {
+      "linkedin": "https://www.linkedin.com/company/smartcp-org",
+      "youtube": "https://www.youtube.com/@smartcp-org",
+      "facebook": "https://www.facebook.com/www.smartcp.org",
+      "instagram": "https://www.instagram.com/smartcp_org",
+      "website": "https://www.smartcp.org/"
+    }
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ],
+    "display": "header"
+  },
   "navigation": {
     "tabs": [
       {
@@ -18,7 +58,7 @@
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "API reference",
         "icon": "square-terminal",
         "products": [
           {
@@ -26,6 +66,7 @@
             "dropdowns": [
               {
                 "dropdown": "Client REST API v1",
+                "icon": "code",
                 "groups": [
                   {
                     "group": "Getting Started",
@@ -36,23 +77,25 @@
                   },
                   {
                     "group": "REST API",
+                    "expanded": true,
                     "pages": [
                       {
                         "group": "Orders",
-                        "openapi": "https://logistics.api-test.smartcp.org/openapi/orders.openapi.json"
+                        "openapi": "https://logistics.api-test.smartcp.org/openapi/orders.openapi.json",
                         "pages": [
-                          "GET /orders/by-nr",
-                          "GET /orders/file-categories",
-                          "POST /orders/{order_id}/files"
+                          "api-reference/scp-logistics/client-rest-api-v1/orders/find-by-number",
+                          "api-reference/scp-logistics/client-rest-api-v1/orders/file-categories",
+                          "api-reference/scp-logistics/client-rest-api-v1/orders/upload-files"
                         ]
                       }
                     ]
                   }
-                ],
-                "icon": "code"
+                ]
               },
               {
                 "dropdown": "Carrier REST API v1",
+                "icon": "code",
+                "hidden": true,
                 "groups": [
                   {
                     "group": "Getting Started",
@@ -60,9 +103,7 @@
                       "api-reference/scp-logistics/carrier-rest-api/v1/overview"
                     ]
                   }
-                ],
-                "icon": "code",
-                "hidden": true
+                ]
               }
             ]
           }
@@ -81,45 +122,5 @@
         ]
       }
     ]
-  },
-  "logo": "/images/icon.png",
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@smartcp.org"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Home",
-      "href": "https://smartcp.org"
-    }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "linkedin": "https://www.linkedin.com/company/smartcp-org",
-      "youtube": "https://www.youtube.com/@smartcp-org",
-      "facebook": "https://www.facebook.com/www.smartcp.org",
-      "instagram": "https://www.instagram.com/smartcp_org",
-      "website": "https://www.smartcp.org/"
-    }
-  },
-  "api": {
-    "playground": {
-      "display": "none"
-    }
   }
 }
