@@ -100,7 +100,10 @@
                       },
                       {
                         "group": "Invoices",
-                        "pages": []
+                        "pages": [
+                          "api-reference/scp-logistics/client-rest-api-v1/invoices/list",
+                          "api-reference/scp-logistics/client-rest-api-v1/invoices/download-pdf"
+                        ]
                       }
                     ]
                   }
