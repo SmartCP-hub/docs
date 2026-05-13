@@ -13,7 +13,6 @@
       {
         "tab": "Docs",
         "icon": "book-open",
-        "hidden": true,
         "pages": [
           "index"
         ]
