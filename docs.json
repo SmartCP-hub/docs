@@ -30,8 +30,8 @@
                   {
                     "group": "Getting Started",
                     "pages": [
-                      "api-reference/scp-logistics/client-rest-api/v1/overview",
-                      "api-reference/scp-logistics/client-rest-api/v1/authentication"
+                      "api-reference/scp-logistics/client-rest-api-v1/overview",
+                      "api-reference/scp-logistics/client-rest-api-v1/authentication"
                     ]
                   },
                   {
@@ -41,7 +41,7 @@
                         "group": "Orders",
                         "expanded": true,
                         "pages": [
-                          "api-reference/scp-logistics/client-rest-api/v1/orders/find-by-number"
+                          "api-reference/scp-logistics/client-rest-api-v1/orders/find-by-number"
                         ]
                       }
                     ]
