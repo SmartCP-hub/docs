@@ -21,9 +21,9 @@
       {
         "tab": "API reference",
         "icon": "square-terminal",
-        "dropdowns": [
+        "products": [
           {
-            "dropdown": "Client REST API",
+            "product": "Client REST API",
             "versions": [
               {
                 "version": "v1",
@@ -52,7 +52,7 @@
             ]
           },
           {
-            "dropdown": "Carrier REST API",
+            "product": "Carrier REST API",
             "hidden": true,
             "versions": [
               {
