@@ -58,7 +58,9 @@
                       "api-reference/scp-logistics/carrier-rest-api/v1/overview"
                     ]
                   }
-                ]
+                ],
+                "icon": "code",
+                "hidden": true
               }
             ]
           }
