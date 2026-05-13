@@ -61,15 +61,6 @@
                 ]
               }
             ]
-          },
-          {
-            "product": "Carrier REST API",
-            "hidden": true,
-            "dropdowns": [
-              {
-                "dropdown": "v1"
-              }
-            ]
           }
         ]
       },
