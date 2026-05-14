@@ -10,4 +10,4 @@ Every authenticated request requires these headers:
 | Header | Value | Description |
 | --- | --- | --- |
 | <Badge color="purple">Authorization</Badge> | Bearer `client_secret_key` | Provide the client secret key as a Bearer token.<br />Format: `Authorization: Bearer {client_secret_key}` |
-| <Badge color="purple" iconType="solid">directory</Badge> | `client_directory` | `client_directory` is the client-specific directory segment in the application URL.<br />Example:<br />`logistics.smartcp.org/{client_directory}`<br />If the client directory is `acme`, the app URL would be:<br />`logistics.smartcp.org/acme` |
+| <Badge color="purple" iconType="solid">X-Client-Directory</Badge> | `client_directory` | `client_directory` is the client-specific directory segment in the application URL.<br />Example:<br />`logistics.smartcp.org/{client_directory}`<br />If the client directory is `acme`, the app URL would be:<br />`logistics.smartcp.org/acme` |
