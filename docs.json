@@ -120,8 +120,8 @@
                       {
                         "group": "Drivers",
                         "pages": [
-                          "list",
-                          "add"
+                          "api-reference/scp-logistics/client-rest-api-v1/drivers/list",
+                          "api-reference/scp-logistics/client-rest-api-v1/drivers/add"
                         ]
                       }
                     ]
