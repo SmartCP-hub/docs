@@ -116,6 +116,13 @@
                             ]
                           }
                         ]
+                      },
+                      {
+                        "group": "Drivers",
+                        "pages": [
+                          "list",
+                          "add"
+                        ]
                       }
                     ]
                   }
