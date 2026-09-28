@@ -11,7 +11,8 @@
   "api": {
     "openapi": [
       "https://logistics.api.smartcp.org/openapi/orders.openapi.json",
-      "https://logistics.api.smartcp.org/openapi/invoices.openapi.json"
+      "https://logistics.api.smartcp.org/openapi/invoices.openapi.json",
+      "https://logistics.api.smartcp.org/openapi/fleet-cards.openapi.json"
     ],
     "playground": {
       "display": "interactive",
@@ -103,6 +104,17 @@
                         "pages": [
                           "api-reference/scp-logistics/client-rest-api-v1/invoices/list",
                           "api-reference/scp-logistics/client-rest-api-v1/invoices/download-pdf"
+                        ]
+                      },
+                      {
+                        "group": "Fleet",
+                        "pages": [
+                          {
+                            "group": "Cards",
+                            "pages": [
+                              "api-reference/scp-logistics/client-rest-api-v1/fleet/cards/list"
+                            ]
+                          }
                         ]
                       }
                     ]
