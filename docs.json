@@ -12,7 +12,8 @@
     "openapi": [
       "https://logistics.api.smartcp.org/openapi/orders.openapi.json",
       "https://logistics.api.smartcp.org/openapi/invoices.openapi.json",
-      "https://logistics.api.smartcp.org/openapi/fleet-cards.openapi.json"
+      "https://logistics.api.smartcp.org/openapi/fleet-cards.openapi.json",
+      "https://logistics.api.smartcp.org/openapi/drivers.openapi.json"
     ],
     "playground": {
       "display": "interactive",
